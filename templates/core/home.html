@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+            integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq"
+            crossorigin="anonymous">
+    </script>
+
+</head>
+<body>
+<p>Colors</p>
+<a href="#" hx-get="{% url 'core:color' %}" hx-swap="beforeend" hx-target="#color-me">Add color</a>
+<ul id="color-me"></ul>
+</body>
+</html>
